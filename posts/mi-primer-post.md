@@ -1,0 +1,6 @@
+---
+title: "Mi primer post"
+date: "2024-06-01"
+excerpt: "Este es mi primer post."
+---
+# Hola mundo
