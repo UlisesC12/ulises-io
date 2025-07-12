@@ -2,20 +2,20 @@
 
 import { getPostBySlug, generateStaticParams } from '../../../../lib/posts';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-
 export { generateStaticParams };
 
-export default function BlogPost({ params }) {
-  const { slug } = params;
+export default async function BlogPost({ params }) {
+  const { slug } = await params;
   const post = getPostBySlug(slug);
 
   return (
     <div>
       <h1>{post.frontMatter.title}</h1>
       <p>{post.frontMatter.date}</p>
-      <div className='prose'>
+      <div className="prose">
         <MDXRemote source={post.content} />
       </div>
     </div>
   );
 }
+
