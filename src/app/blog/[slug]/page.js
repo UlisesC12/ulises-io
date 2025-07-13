@@ -1,7 +1,9 @@
 // src/app/blog/[slug]/page.js
 
 import { getPostBySlug, generateStaticParams } from '../../../../lib/posts';
-import { MDXRemote } from 'next-mdx-remote/rsc';
+import PostContent from '@/components/blog/postContent';
+import PostHeader from '@/components/blog/postHeader';
+
 export { generateStaticParams };
 
 export default async function BlogPost({ params }) {
@@ -9,12 +11,15 @@ export default async function BlogPost({ params }) {
   const post = getPostBySlug(slug);
 
   return (
-    <div>
-      <h1>{post.frontMatter.title}</h1>
-      <p>{post.frontMatter.date}</p>
-      <div className="prose">
-        <MDXRemote source={post.content} />
-      </div>
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <PostHeader
+        title={post.frontMatter.title}
+        date={post.frontMatter.date}
+        readTime={post.frontMatter.readTime}
+        tags={post.frontMatter.tags}
+      />
+
+      <PostContent content={post.content} />
     </div>
   );
 }
