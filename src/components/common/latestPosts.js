@@ -1,5 +1,6 @@
 import { getAllPostsData } from "../../../lib/posts";
 import Link from 'next/link';
+import { FcNext } from "react-icons/fc";
 
 export default function LatestPosts() {
   const posts = getAllPostsData();
@@ -7,7 +8,10 @@ export default function LatestPosts() {
   return (
     <section className="mb-16">
       {/* Latest Posts Section */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Últimos posts</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-2">
+        <FcNext />
+        Últimos posts
+      </h2>
       {posts.length > 0 ? (
         <div className="grid gap-6 md:grid-cols-2">
           {posts.map(post => (

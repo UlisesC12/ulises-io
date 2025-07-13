@@ -1,8 +1,12 @@
+import { FcGraduationCap } from "react-icons/fc";
+
 export default function About() {
   return (
     <section className="mb-16">
       {/* About Section */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-6">Sobre mí</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+        <FcGraduationCap /> Sobre mí
+      </h2>
       <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
         <p>
           Soy un ingeniero de software, me gusta la tecnología y la ciencia, disfruto de la lectura y el aprendizaje constante.
