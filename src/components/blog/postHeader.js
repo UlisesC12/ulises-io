@@ -1,4 +1,15 @@
 // src/components/blog/PostHeader.js
+
+function formatDate(dateString) {
+  const [year, month, day] = dateString.split('-');
+  const date = new Date(year, month - 1, day);
+  return date.toLocaleDateString('es-ES', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
 export default function PostHeader({ title, date, readTime, tags }) {
   return (
     <header className="mb-8 pb-8 border-b border-gray-200">
@@ -9,11 +20,7 @@ export default function PostHeader({ title, date, readTime, tags }) {
       <div className="flex flex-wrap items-center gap-4 text-gray-600">
         {date && (
           <time className="text-sm font-medium">
-            {new Date(date).toLocaleDateString('es-ES', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
+            {formatDate(date)}
           </time>
         )}
 
