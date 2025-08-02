@@ -6,7 +6,7 @@ excerpt: "Mi experiencia contruyendo SaaS y mis pensamientos hasta el momento."
 ## Mi camino
 Han pasado años desde que dije que iba a "construir negocios", afortunadamente en Noviembre de 2024 me puse manos a la obra, con una idea que ni si quiera sabía si iba a tener validación o no. Este era un punto de venta para ópticas, o es... aun no lo he lanzado (triste 😭, espero lanzarlo en las próximas semanas), y la verdad es que los modulos se ven bastante bien.
 
-Sobre el camino se me ocurrió lanzar un SaaS para profesores ([Miniprofe](https://miniprofe.com)), y aprovechando la ola del "vibe code" y como era una idea fácil de implementar al principio, lo hice, aunque de primeras fue un desastre, se logró terminarlo de manera satisfactoria.
+Sobre el camino se me ocurrió lanzar un SaaS para profesores ([Miniprofe](https://miniprofe.com)), y aprovechando la ola del "vibe code" y como era una idea fácil de implementar al principio, lo hice, aunque de primeras fue un desastre, se logró terminar de manera satisfactoria.
 
 El tech stack que usé fue el siguiente:
 - **Next.js:** Para poder seguir practicando este framework.
@@ -24,6 +24,7 @@ El SaaS no ha hecho dinero en los últimos 2 meses desde su lanzamiento.
 Sin embargo hice una consulta en las comunidades de twitter (X), y la respuesta fue contundente, **nunca matar**. Sé que es algo extremo pero entiendo el sentimiento de *todo o nada*, y es bastante motivante si les soy honesto.
 
 ## Conclusión
-Nunca pares de aprender, nunca pares de intentarlo, nunca pares de innovar y sobre todo nunca te rindas, a pesar de las adversidades, el emprendedor "Lalo Haros" (si bien recuerdo su nombre) ya nos lo anticipaba con su icónica frase:
+Nunca pares de aprender, nunca pares de intentarlo, nunca pares de innovar y sobre todo nunca te rindas a pesar de las adversidades. 
+El emprendedor "Lalo Haros" (si bien recuerdo su nombre) ya nos lo anticipaba con su icónica frase:
 *"No hay crisis que soporte 14 horas de trabajo diario"*
 A eso yo le agrego a la ecuación trabajo constante y tenemos como resultado; **Éxito asegurado**.
