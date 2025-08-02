@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { HiArrowLeft } from "react-icons/hi";
 
 const cv = {
   name: "Ulises Rodríguez Candela",
@@ -82,20 +84,25 @@ const cv = {
 export default function CVPage() {
   return (
     <>
+      <Link href="/">
+        <div className="flex flex-row gap-2 items-center mt-4 w-fit text-blue-700 font-medium text-sm ml-10 sticky top-10 bg-white border border-gray-200 rounded-xl p-2.5 shadow-sm hover:shadow-lg transition-all duration-300 group-hover:border-gray-300 hover:cursor-pointer">
+          <HiArrowLeft className="w-4 h-4" />
+          <span className="text-sm">Return to home</span>
+        </div>
+      </Link>
       <div className="max-w-4xl mx-auto px-4 pb-8 flex flex-col gap-4 justify-center items-center text-center">
         <h1 className="text-6xl font-bold text-gray-900 mb-0">{cv.name}</h1>
         <h2 className="text-4xl font-bold text-gray-900 mb-2">{cv.role}</h2>
 
-        <div className="flex flex-row gap-4 text-lg">
+        {/* <div className="flex flex-row gap-4 text-lg">
           <p>{cv.email}</p>
           <span className="text-gray-500">•</span>
           <p>{cv.phone}</p>
           <span className="text-gray-500">•</span>
           <p>{cv.address}</p>
-        </div>
+        </div> */}
       </div>
 
-      {/* TODO: Seccion donde se vea about me */}
       <div className="max-w-4xl mx-auto px-4 pb-8 flex flex-col gap-0 text-lg items-start">
         <h2 className="text-4xl font-bold text-gray-900 mb-2">About Me</h2>
         <p className="mb-4 pb-0">
@@ -105,7 +112,6 @@ export default function CVPage() {
         </p>
       </div>
 
-      {/* TODO: Seccion donde se vea experiencia */}
       <div className="max-w-4xl mx-auto px-4 pb-8 flex flex-col gap-0 text-lg items-start">
         <h2 className="text-4xl font-bold text-gray-900 mb-2">Work Experience</h2>
         {cv.workExperience.map((workExperience, index) => (
