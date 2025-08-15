@@ -1,5 +1,6 @@
 // src/components/blog/PostCard.js
 import Link from 'next/link';
+import { formatDate } from './postHeader';
 
 export default function PostCard({ post }) {
   return (
@@ -11,11 +12,7 @@ export default function PostCard({ post }) {
           </h3>
           {post.frontMatter.date && (
             <time className="text-sm text-gray-500 font-medium">
-              {new Date(post.frontMatter.date).toLocaleDateString('es-ES', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
+              {formatDate(post.frontMatter.date)}
             </time>
           )}
           {post.frontMatter.excerpt && (
